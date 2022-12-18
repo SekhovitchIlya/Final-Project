@@ -1,0 +1,27 @@
+.title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+  
+  .search-form {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  .input {
+    width: 100%;
+    max-width: 20rem;
+    border: none;
+    padding: 1rem;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    background: #ececec;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 1rem;
+    font-size: 5rem;
+  }
+  

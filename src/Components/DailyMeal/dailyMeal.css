@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.daily-meal {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(201, 219, 253);
+    /* border: 1px solid green; */
+    margin: 5% 0;
+}
+
+.img-daily {
+    width: 60%;
+}
+
+.img-daily img {
+    width: 100%;
+}
+
+.daily-meal-info {
+    width: 40%;
+    text-align: center;
+}
