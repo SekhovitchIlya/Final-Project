@@ -7,7 +7,10 @@
 .main-meals {
     width: 100%;
     padding: 3% 10%;
-    /* border: 1px solid red; */
+}
+
+.categories {
+    width: 100%;
 }
 
 .categories-list {
@@ -15,7 +18,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 5% 0;
+    margin: 5% 0;   
+}
+
+.categories-list a {
+    text-decoration: none;
+    color: black;
 }
 
 .slideBtn {
@@ -27,8 +35,15 @@
     width: 50%;
 }
 
-
-
 ::-webkit-scrollbar {
     display: none;
-  }
+}
+
+.favourite-meals {
+    width: 100%;
+}
+
+.favourite-meals a {
+    text-decoration: none;
+    color: black;
+}

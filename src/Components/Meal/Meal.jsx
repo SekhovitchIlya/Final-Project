@@ -1,7 +1,8 @@
 import React, { useContext } from 'react';
 import { MealsContext } from '../../context/MealsContext';
+import './meal.css';
 
-export default function Meal({ id, name, img }) {
+export default function Meal({  name, img }) {
 
   const {setChoosenMeal} = useContext(MealsContext);
 
@@ -11,9 +12,11 @@ export default function Meal({ id, name, img }) {
   
   return (
     <div className='meal' onClick={ChoosenMeal}>
-      <p>{id}</p>
-      <p>{name}</p>
+      
       <img src={img} alt='#'/>
+      <div className='meal-info'>
+        <p>{name}</p>
+      </div>
     </div>  
   )
 }

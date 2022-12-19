@@ -32,6 +32,22 @@ const MealsProvider = ({children}) => {
         fetchMeals(search);           
     }, [search]);
 
+    const fetchMealId = async(id) => {
+        try {
+            const response = await fetch(`https://themealdb.com/api/json/v1/1/lookup.php?i=${id}`);
+            const data = await response.json();
+            if(data !== undefined) {   
+                setMeals(data.meals);  
+                setError({show: false, msg: ''}); 
+            } else {
+                setError({show: true, msg: data.Error});
+            }
+            
+        } catch (error) {
+            console.log(error);
+        }
+    };
+
     const fetchRandomMeal = async() => {
         try {
             const response = await fetch('https://themealdb.com/api/json/v1/1/random.php');
@@ -104,7 +120,7 @@ const MealsProvider = ({children}) => {
                 categoryArray,
                 search,
                 setSearch,
-                fetchMeals,
+                fetchMealId,
                 error,
                 choosenMeal,
                 setChoosenMeal

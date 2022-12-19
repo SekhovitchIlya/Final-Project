@@ -5,6 +5,7 @@ import { MealsContext } from '../../context/MealsContext';
 import Search from '../../Components/Search/Search';
 import Footer from '../../Components/Structure/Footer/Footer';
 import { Link } from 'react-router-dom';
+import './Meals.css';
 
 const Meals = () => {  
     
@@ -13,22 +14,26 @@ const Meals = () => {
     return (
         <>
             <Header />
-            <Search />
-
-            <div className='next-block'>
-                { meals?.length > 0 ? (
-                    meals.map((meal) => (
-                        <Link to={'/mealInfo'} key={meal.idMeal}>
-                        <Meal
-                            key={meal.idMeal}
-                            name={meal.strMeal}
-                            img={meal.strMealThumb} 
-                        />
-                        </Link>
-                    ))) : (<div className='movies-error'>Please search meals...</div>)
-                }                    
-            </div> 
-
+            
+            <main className='main-meals'>
+                <Search />
+                <div className='meals-by-search'>
+                    { meals?.length > 0 ? (
+                        meals.map((meal) => (
+                            <div className='meal-container' key={meal.idMeal}>
+                            <Link to={'/mealInfo'} key={meal.idMeal}>
+                                <Meal
+                                    key={meal.idMeal}
+                                    name={meal.strMeal}
+                                    img={meal.strMealThumb}                         
+                                />
+                            </Link>
+                            </div>
+                        ))) : (<div className='meals-error'>Please search meals...</div>)
+                    }                    
+                </div> 
+            </main>
+            
             <Footer />
         </>   
     );

@@ -17,50 +17,54 @@ export default function Main() {
   const { dailyMeal, categories, setChoosenMeal} = useContext(MealsContext);
  
   useEffect(() => {
-    setChoosenMeal(dailyMeal.strMeal);
-  }, [setChoosenMeal, dailyMeal.strMeal]); 
+    setChoosenMeal(dailyMeal.idMeal);
+  }, [setChoosenMeal, dailyMeal.idMeal]); 
 
   return (
     <main className='main-meals'>
 
-      <p>Categories</p>
-      <div className='categories-list'>
-        <button className='slideBtn' onClick={prev}>
-          <img src={leftArrow} alt="" />
-        </button>
+      <div className='categories'> 
+        <h3>Categories</h3>
+        <div className='categories-list'>
+          <button className='slideBtn' onClick={prev}>
+            <img src={leftArrow} alt="" />
+          </button>
 
-        <Whirligig
-          visibleSlides={4}
-          gutter="1em"
-          ref={(_whirligigInstance) => { whirligig = _whirligigInstance}}
-        >
+          <Whirligig
+            visibleSlides={4}
+            gutter="1em"
+            ref={(_whirligigInstance) => { whirligig = _whirligigInstance}}
+          >
 
-          { categories.map((category) => (
-            <Link key={category.idCategory} to={'/mealsByCategory'} >
-              <CategoriesList
-                key={category.idCategory}
-                categoryName={category.strCategory}
-                img={category.strCategoryThumb}
-              />
-            </Link>
-          ))}         
-        </Whirligig>
+            { categories.map((category) => (
+              <Link key={category.idCategory} to={'/mealsByCategory'} >
+                <CategoriesList
+                  key={category.idCategory}
+                  categoryName={category.strCategory}
+                  img={category.strCategoryThumb}
+                />
+              </Link>
+            ))}         
+          </Whirligig>
 
-        <button className='slideBtn' onClick={next}>
-          <img src={rightArrow} alt="" />
-        </button>
-      </div>
+          <button className='slideBtn' onClick={next}>
+            <img src={rightArrow} alt="" />
+          </button>
+        </div>
+      </div> 
       
-      <p>Favourite Meals</p>    
-      <Link to='/mealInfo' >
-        <DailyMeal 
-          key={dailyMeal.idMeal} 
-          img={dailyMeal.strMealThumb}
-          name={dailyMeal.strMeal}
-          area={dailyMeal.strArea}
-          category={dailyMeal.strCategory}
-        />
-      </Link>        
+      <div className='favourite-meals'>
+        <h3>Favourite Meals</h3>    
+        <Link to='/mealInfo' >
+          <DailyMeal 
+            key={dailyMeal.idMeal} 
+            img={dailyMeal.strMealThumb}
+            name={dailyMeal.strMeal}
+            area={dailyMeal.strArea}
+            category={dailyMeal.strCategory}
+          />
+        </Link>
+      </div>        
     </main>
   )
 }

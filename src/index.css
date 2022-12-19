@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Playfair+Display&family=Rubik+Gemstones&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Dosis&family=Kanit&family=Playfair+Display&family=Rubik+Gemstones&display=swap');
 
 body {
   margin: 0;
-  font-family: 'Kanit', sans-serif;
+  font-family: 'Bitter', serif;
   font-size: 24px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
 }
 
 code {

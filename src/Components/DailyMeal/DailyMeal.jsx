@@ -9,11 +9,11 @@ export default function DailyMeal({img, name, area, category}) {
                 <img src={img} alt='#'/>
             </div>
 
-            <div className='daily-meal-info'>
-                <p>You must try!</p>
-                <h1>{name}</h1>
-                <p>Country: {area}</p>
-                <p>Category: {category}</p>
+            <div className='daily-meal-info'>     
+                <h4>You must try!</h4>
+                <h2>{name}</h2>
+                <h5>Country: {area}</h5>
+                <h5>Category: {category}</h5>
             </div>            
         </div>      
     );
