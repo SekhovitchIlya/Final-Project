@@ -21,7 +21,7 @@ export default function Main() {
   }, [setChoosenMeal, dailyMeal.idMeal]); 
 
   return (
-    <main className='main-meals'>
+    <main className='main-meals-home'>
 
       <div className='categories'> 
         <h3>Categories</h3>

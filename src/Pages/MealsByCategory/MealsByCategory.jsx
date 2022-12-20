@@ -22,6 +22,7 @@ const MealsByCategory = () => {
                                 <Link to={'/mealInfo'} key={category.idMeal}>
                                     <Meal
                                         key={category.idMeal}
+                                        id={category.idMeal}
                                         name={category.strMeal}
                                         img={category.strMealThumb}
                                     />

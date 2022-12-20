@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { MealsContext } from '../../context/MealsContext';
-import './categoriesList.css';
+import './CategoriesList.css';
 
 export default function CategoriesList({categoryName, img}) {
 

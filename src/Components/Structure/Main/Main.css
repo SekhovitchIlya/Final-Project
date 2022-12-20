@@ -4,9 +4,10 @@
     box-sizing: border-box;
 }
 
-.main-meals {
-    width: 100%;
+.main-meals-home {
+    width: 80%;
     padding: 3% 10%;
+    margin: auto 10%;
 }
 
 .categories {
@@ -26,6 +27,10 @@
     color: black;
 }
 
+.categories-list a:hover {
+    color: red;
+}
+
 .slideBtn {
     border: none;
     background: white;
@@ -33,6 +38,10 @@
 
 .slideBtn img {
     width: 50%;
+}
+
+.slideBtn img:hover {
+    width: 60%;
 }
 
 ::-webkit-scrollbar {
@@ -45,5 +54,4 @@
 
 .favourite-meals a {
     text-decoration: none;
-    color: black;
 }

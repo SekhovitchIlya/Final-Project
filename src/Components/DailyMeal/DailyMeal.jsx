@@ -1,5 +1,5 @@
 import React from 'react';
-import './dailyMeal.css';
+import './DailyMeal.css';
 
 export default function DailyMeal({img, name, area, category}) {
    

@@ -15,7 +15,7 @@ const Meals = () => {
         <>
             <Header />
             
-            <main className='main-meals'>
+            <main className='meals-main'>
                 <Search />
                 <div className='meals-by-search'>
                     { meals?.length > 0 ? (
@@ -24,8 +24,9 @@ const Meals = () => {
                             <Link to={'/mealInfo'} key={meal.idMeal}>
                                 <Meal
                                     key={meal.idMeal}
+                                    id={meal.idMeal}
                                     name={meal.strMeal}
-                                    img={meal.strMealThumb}                         
+                                    img={meal.strMealThumb}                          
                                 />
                             </Link>
                             </div>

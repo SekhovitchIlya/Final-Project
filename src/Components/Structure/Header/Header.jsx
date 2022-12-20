@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../img/logo.png';
-import './header.css';
+import './Header.css';
 
 export default function Header() {
   return (
@@ -9,19 +9,24 @@ export default function Header() {
       <div className='logo-container'>
         <img className='logo' src={logo} alt='#'></img>
       </div>
+
+      <div className='tagline'>
+        <p>Most popular recipes</p>
+      </div>
         
       <div className='navBar'>
-        <Link to={'/home'}>
-          <span>Home</span>
-        </Link>
-        
-        <Link to={'/meals'}>
-          <span>Meals</span>
-        </Link>  
+        <p>Menu</p>
+        <div className='links'>
+          <Link to={'/home'}>
+            <span>Home</span>
+          </Link>
+          
+          <Link to={'/meals'}>
+            <span>Meals</span>
+          </Link> 
+        </div>
+         
 
-        <Link to={'/about'}>
-          <span>About</span>
-        </Link>      
       </div>
     </header>
   )

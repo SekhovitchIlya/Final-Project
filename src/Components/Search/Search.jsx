@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { MealsContext } from '../../context/MealsContext';
-import './search.css';
+import './Search.css';
 
 export default function Search() {
 
