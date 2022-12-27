@@ -5,18 +5,18 @@ import './Header.css';
 
 export default function Header() {
   return (
-    <header className='header'>
-      <div className='logo-container'>
-        <img className='logo' src={logo} alt='#'></img>
+    <header className='header-container'>
+      <div className='header-logo-container'>
+        <img className='header-logo' src={logo} alt='#'/>
       </div>
 
-      <div className='tagline'>
-        <p>Most popular recipes</p>
+      <div className='header-tagline'>
+        <p>Lovely Recipes</p>
       </div>
         
-      <div className='navBar'>
+      <div className='header-navBar'>
         <p>Menu</p>
-        <div className='links'>
+        <div className='header-links'>
           <Link to={'/home'}>
             <span>Home</span>
           </Link>
@@ -26,7 +26,6 @@ export default function Header() {
           </Link> 
         </div>
          
-
       </div>
     </header>
   )

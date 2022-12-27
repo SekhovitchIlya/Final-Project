@@ -10,7 +10,6 @@ export default function DailyMeal({img, name, area, category}) {
             </div>
 
             <div className='daily-meal-info'>     
-                <h4>You must try!</h4>
                 <h2>{name}</h2>
                 <h5>Country: {area}</h5>
                 <h5>Category: {category}</h5>

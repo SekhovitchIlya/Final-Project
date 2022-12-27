@@ -6,14 +6,13 @@
 
 .search-form {
   width: 100%;
-  max-width: 1200px;
+  /* max-width: 1200px; */
 }
 
 .input {
-  width: 100%;
-  max-width: 20rem;
+  width: 33%;
   border: none;
-  padding: 1rem;
+  padding: 1%;
   font-size: 1rem;
   border-radius: 0.5rem;
   background: #ececec;
@@ -23,4 +22,22 @@
   color: red;
   margin-top: 1rem;
   font-size: 5rem;
+}
+
+@media (min-width:2000px) {
+  .input {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width:1000px) {
+  .input {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width:426px) {
+  .input {
+    width: 50%;
+  }
 }

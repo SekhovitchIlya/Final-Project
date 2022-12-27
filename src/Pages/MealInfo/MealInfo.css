@@ -41,3 +41,36 @@
     width: 100%;
     text-align: justify;
 }
+
+@media (max-width:2560px) {
+    .main-meal-info {
+        width: 60%;
+        font-size: 32px;
+    }
+
+    .name {
+        font-size: 50px;
+    }
+}
+
+@media (max-width:1024px) {
+    .main-meal-info {
+        width: 70%;
+        font-size: 18px;
+    }
+
+    .name {
+        font-size: 22px;
+    }
+}
+
+@media (max-width:426px) {
+    .main-meal-info {
+        width: 80%;
+        font-size: 16px;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+}

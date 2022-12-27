@@ -7,14 +7,14 @@ import MealInfo from "./Pages/MealInfo/MealInfo";
 
 function App() {
   return ( 
-    <div className="App">
+    <>
       <Routes>
         <Route path='/home' element={<Home />}/>
         <Route path='/meals' element={<Meals />}/>
         <Route path='/mealsByCategory' element={<MealsByCategory />}/>
         <Route path='/mealInfo' element={<MealInfo />}/>            
       </Routes>
-    </div>
+    </>
   );
 };
 

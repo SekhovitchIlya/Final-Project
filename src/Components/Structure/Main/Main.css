@@ -4,13 +4,13 @@
     box-sizing: border-box;
 }
 
-.main-meals-home {
+.main-home-container {
     width: 80%;
     padding: 3% 10%;
     margin: auto 10%;
 }
 
-.categories {
+.main-home-categories {
     width: 100%;
 }
 
@@ -54,4 +54,154 @@
 
 .favourite-meals a {
     text-decoration: none;
+}
+
+@media (max-width:2560px) {
+    .main-home-container {
+        font-size: 40px;
+    }
+
+    .categories-list a {
+        font-size: 36px;
+    }
+
+    .slide {
+        width: calc((100% - 4em) / 5) !important;
+    }
+}
+
+@media (max-width:2200px) {
+    .main-home-container {
+        font-size: 36px;
+    }
+
+    .categories-list a {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:2000px) {
+    .main-home-container {
+        font-size: 36px;
+    }
+
+    .categories-list a {
+        font-size: 28px;
+    }
+}
+
+@media (max-width:1540px) {
+    .main-home-container {
+        font-size: 32px;
+    }
+
+    .categories-list a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:1440px) {
+    .main-home-container {
+        font-size: 30px;
+    }
+
+    .categories-list a {
+        font-size: 19px;
+    }
+
+    .slide {
+        width: calc((100% - 3em) / 4) !important;
+    }
+}
+
+@media (max-width:1200px) {
+    .main-home-container {
+        font-size: 28px;
+    }
+
+    .categories-list a {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .main-home-container {
+        font-size: 24px;
+        padding: 3% 10%;
+    }
+
+    .categories-list a {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 900px) {
+    .main-home-container {
+        font-size: 22px;      
+    }
+
+    .categories-list a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:768px) {
+    .main-home-container {
+        font-size: 22px;
+        padding: 3% 5%;
+    }
+
+    .categories-list a {
+        font-size: 16px;
+    }
+
+    .slide {
+        width: calc((100% - 2em) / 3) !important;
+    }
+}
+
+@media (max-width:600px) {
+    .main-home-container {
+        font-size: 18px;
+    }
+
+    .categories-list a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:426px) {
+    .main-home-container {
+        font-size: 16px;
+        padding: 3% 0%;
+    }
+
+    .categories-list a {
+        font-size: 18px;
+    }
+
+    .slide {
+        width: calc((100% - 1em) / 2) !important;
+    }
+}
+
+@media (max-width:376px) {
+    .main-home-container {
+        font-size: 15px;
+    }
+
+    .categories-list a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:321px) {
+    .main-home-container {
+        font-size: 14px;
+    }
+
+    .categories-list a {
+        font-size: 15px;
+    } 
 }

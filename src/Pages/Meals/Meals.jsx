@@ -30,7 +30,7 @@ const Meals = () => {
                                 />
                             </Link>
                             </div>
-                        ))) : (<div className='meals-error'>Please search meals...</div>)
+                        ))) : (<div className='meals-error'>NO rezults, please, search again...</div>)
                     }                    
                 </div> 
             </main>

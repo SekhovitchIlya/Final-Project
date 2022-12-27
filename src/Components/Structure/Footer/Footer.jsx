@@ -4,12 +4,17 @@ import './Footer.css';
 
 export default function Footer() {
   return (
-    <footer className='footer'>
-      <div className='logo-container'>
-        <img className='logo' src={logo} alt='#'></img>
+    <footer className='footer-container'>
+      <div className='footer-logo-container'>
+        <img className='footer-logo' src={logo} alt='#'/>
       </div>
-      <div className='tagline'>
-        <p>Most popular recipes</p>
+
+      <div className='footer-tagline'>
+        <p>Lovely Recipes</p>
+      </div>
+
+      <div className='footer-logo-container-right'>
+        <img className='footer-logo' src={logo} alt='#'/>
       </div>
     </footer>
   )

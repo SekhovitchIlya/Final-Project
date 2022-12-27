@@ -6,14 +6,15 @@
 
 .main-meals {
     width: 60%;
-    margin: 2% auto;
+    margin: 0 auto;
 }
 
 .meals-by-category {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 2%;
+    column-gap: 1%;
+    row-gap: 0.1%;
     margin-top: 5%;
     overflow: scroll;
 }
@@ -26,4 +27,27 @@
 .container img {
     width: 100%;
     border-radius: 3%;
+}
+
+@media (max-width:768px) {
+    .main-meals {
+        width: 70%;       
+    }
+}
+
+@media (max-width:700px) {
+    .meals-by-category {
+        grid-template-columns: repeat(3, 1fr);      
+    }
+}
+
+@media (max-width:426px) {
+    .main-meals {
+        width: 80%;       
+    }
+
+    .meals-by-category {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3%;
+    }
 }

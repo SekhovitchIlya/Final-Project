@@ -21,17 +21,22 @@ export default function Main() {
   }, [setChoosenMeal, dailyMeal.idMeal]); 
 
   return (
-    <main className='main-meals-home'>
+    <main className='main-home-container'>
 
-      <div className='categories'> 
+      <div className='main-home-categories'> 
         <h3>Categories</h3>
         <div className='categories-list'>
           <button className='slideBtn' onClick={prev}>
             <img src={leftArrow} alt="" />
           </button>
-
+          
+          {/* { window.screen?.width <= 425 ? (
+              console.log('yes')
+          ):(console.log(window.screen.width))} */}
           <Whirligig
-            visibleSlides={4}
+            className={'whirligig'}
+            slideClass={'slide'}
+            visibleSlides={2}
             gutter="1em"
             ref={(_whirligigInstance) => { whirligig = _whirligigInstance}}
           >
@@ -64,7 +69,7 @@ export default function Main() {
             category={dailyMeal.strCategory}
           />
         </Link>
-      </div>        
+      </div>            
     </main>
   )
 }

@@ -13,7 +13,8 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2%;
+    column-gap: 1%;
+    row-gap: 0.1%;
     margin-top: 1%;
     overflow: scroll;
 }
@@ -26,4 +27,16 @@
 .meal-container img {
     width: 100%;
     border-radius: 3%;
+}
+
+@media (max-width:768px) {
+    .meals-main {
+        width: 70%;
+    }
+}
+
+@media (max-width:426px) {
+    .meals-by-search {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
